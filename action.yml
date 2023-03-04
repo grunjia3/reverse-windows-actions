@@ -1,0 +1,21 @@
+name: 'Debugging using Reverse RDP with ngrok'
+description: 'Enable RDP and connect to the runner using ngrok service'
+
+branding:
+  icon: airplay
+  color: blue
+
+inputs:
+  ngrok-token:
+    required: true
+  password:
+    required: false
+    default: "P@ssw0rd!"
+  foreground:
+    required: false
+    default: true
+
+runs:
+  using: 'node16'
+  main: 'dist/start_rdp/index.js'
+  post: 'dist/wait_rdp/index.js'

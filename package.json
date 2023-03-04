@@ -1,0 +1,30 @@
+{
+  "name": "reverse-rdp-windows-github-actions",
+  "version": "1.0.0",
+  "description": "Debugging using Reverse RDP with ngrok",
+  "main": "dist/start_rdp/index.js",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src",
+    "build:main": "ncc build src/start_rdp.js -o dist/start_rdp --source-map --license licenses.txt",
+    "build:post": "ncc build src/wait_rdp.js -o dist/wait_rdp --source-map --license licenses.txt",
+    "prepare": "npm run build:main && npm run build:post",
+    "test": "jest",
+    "all": "npm run lint && npm run prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NyaMisty/reverse-rdp-windows-github-actions-ng.git"
+  },
+  "author": "NyaMisty",
+  "license": "MIT",
+  "homepage": "https://github.com/NyaMisty/reverse-rdp-windows-github-actions-ng",
+  "dependencies": {
+    "@actions/core": "^1.2.5"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1",
+    "eslint": "^8.0.0",
+    "jest": "^27.2.5"
+  }
+}
