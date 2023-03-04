@@ -25,7 +25,7 @@ https://www.appveyor.com/docs/how-to/rdp-to-build-worker/
   - You can also run this action multiple time with different `foreground` parameter acting as workflow breakpoint
 4. Visit ngrok's dashboard. https://dashboard.ngrok.com/ & Get address in ngrok's `Cloud Edge` -> `Endpoints`
 6. Connect to the host and port combination with your RDP client of choice.
-  - Username is always `runneradmin`, with password you specified above (defaults to `P@ssw0rd!`)
+  - Username is always `runneradmin`, with password you specified above (defaults to `Aa123456`)
 7. Enjoy! ☕
 8. When you're done introspecting, delete the file `Delete-This-File-To-Continue.txt` on desktop to continue the action
 
