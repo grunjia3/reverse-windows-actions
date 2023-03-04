@@ -2,8 +2,6 @@
 
 Ever wonder what the Desktop of the Windows Runners on GitHub Actions looks like?
 
-![Screenshot](https://github.com/NyaMisty/reverse-rdp-windows-github-actions-ng/raw/old/screenshot.png)
-
 This functionality is like Appveyor's RDP functionality for their Windows workers:
 
 https://www.appveyor.com/docs/how-to/rdp-to-build-worker/
